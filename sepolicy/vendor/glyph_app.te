@@ -19,7 +19,6 @@ allow glyph_app {
   netstats_service
   sensorservice_service
   surfaceflinger_service
-  vendor_perf_service
   vibrator_manager_service
   virtual_device_native_service
 }:service_manager find;
