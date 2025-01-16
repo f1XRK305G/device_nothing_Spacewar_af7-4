@@ -12,10 +12,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/nothing/Spacewar/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_Spacewar
+PRODUCT_NAME := afterlife_Spacewar
 PRODUCT_DEVICE := Spacewar
 PRODUCT_BRAND := Nothing
 PRODUCT_MODEL := A063
@@ -30,3 +30,13 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="Spacewar-user 12 SKQ1.211230.001 1666412462 release-keys"
 
 BUILD_FINGERPRINT := Nothing/Spacewar/Spacewar:12/SKQ1.211230.001/1666412462:user/release-keys
+
+# AfterLife flags
+TARGET_SUPPORTS_BLUR := true
+TARGET_UDFPS_ANIMATIONS := true
+AFTERLIFE_GAPPS := true
+AFTERLIFE_MAINTANER := true
+AFTERLIFE_MAINTAINER := F1X
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+WITH_GMS := true
